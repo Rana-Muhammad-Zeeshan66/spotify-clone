@@ -12,9 +12,7 @@ interface SongItemProps {
 }
 
 const SongItem: React.FC<SongItemProps> = ({ data, onClick }) => {
-  const imagePath = useMemo(() => {
-    return useLoadImage(data);
-  }, [data]);
+  const imagePath = useLoadImage(data);
 
   return (
     <div
